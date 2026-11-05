@@ -72,7 +72,7 @@ const News =(props)=> {
        setLoading(true)
         let data = await fetch(url);
         let parsedData = await data.json()
-        console.log(parsedData);  
+      console.log(parsedData);  
       setArticles(articles.concat(parsedData.articles))
       setToatalResults(parsedData.totalResults)
       setLoading(false)
@@ -111,13 +111,13 @@ const News =(props)=> {
       News.defaultProps = {
         country: 'us',
         pageSize: 8,
-        category: 'general',
+        category: 'general'
       }
 
     News.propTypes = {
         country: PropTypes.string,
         pageSize: PropTypes.number,
-        category: PropTypes.string,
+        category: PropTypes.string
     }
 
 export default News

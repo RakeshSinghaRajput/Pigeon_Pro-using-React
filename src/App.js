@@ -25,7 +25,7 @@ const App =()=> {
                                 key="general"
                                 pageSize={pageSize}
                                 category="general"
-                                country="us"
+                                country=""
                             />
                         }
                     />
